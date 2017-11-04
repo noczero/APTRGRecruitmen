@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  div(class="container-fluid text-center")
+   h1= title
+   img.img-fluid(src="images/APTRG2.png" alt="aptrglogo")
+   
+   h4 Batas Pengumpulan Berkas
+   br
+   h1
+    div(class="alert alert-danger" role="alert")
+     #batasSubmission 
+   
+   br
+   h4 Timeline
+   img.img-fluid(src="images/timeLine.png" alt="aptrglogo")
+
+   hr
+
+   h4 List File Submission
+   br
+   div.row
+    for val in data
+     div(class="col-md-4 col-md-offset-5")
+      div(class="alert alert-success" role="alert") #{val.NIM} - #{val.nama} 
+        br
+        span(class="badge badge-success") Already Submit
+
+   br
+
+   
