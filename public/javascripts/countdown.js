@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 9, 2017 23:59:00").getTime();
+var countDownDate = new Date("Nov 12, 2017 08:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,12 +17,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in an element with id="demo"
-  document.getElementById("batasSubmission").innerHTML = days + " Hari " + hours + " Jam "
+  document.getElementById("testTulis").innerHTML = days + " Hari " + hours + " Jam "
   + minutes + " Menit " + seconds + " Detik ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("batasSubmission").innerHTML = "EXPIRED";
+    document.getElementById("testTulis").innerHTML = "Test tulis dimulai";
   }
 }, 1000);
